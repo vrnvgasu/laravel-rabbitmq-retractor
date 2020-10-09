@@ -1,0 +1,25 @@
+{
+    "name": "vrnvgasu/laravel-rabbitmq-retractor",
+    "description": "Handling rabbitmq messages through laravel queues",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shitikov Dmitrii",
+            "email": "vgasu2841@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.2",
+        "vrnvgasu/retractor": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vrnvgasu\\RebbitMqRetractor\\": "src/"
+        }
+    }
+}
