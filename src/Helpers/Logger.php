@@ -11,9 +11,6 @@ use Illuminate\Support\Facades\Log;
  */
 trait Logger
 {
-    /**
-     * @param Exception $e
-     */
     private function logError(Exception $e): void
     {
         if (!($logger = config('rabbitmq_retractor.logger'))) {

@@ -20,11 +20,11 @@ abstract class ConsumerHandler implements Retractable
     /**
      * @var int
      */
-    protected $retractorAttempt;
+    protected int $retractorAttempt;
     /**
      * @var int
      */
-    protected $retractorDelay;
+    protected int $retractorDelay;
 
     /**
      * ConsumerHandler constructor.
@@ -44,7 +44,6 @@ abstract class ConsumerHandler implements Retractable
 
     /**
      * @param null $data
-     * @return bool
      */
     public function tryToProvide($data = null): bool
     {

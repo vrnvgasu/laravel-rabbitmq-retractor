@@ -10,12 +10,10 @@ use Illuminate\Support\ServiceProvider;
  */
 class RetractProvider extends ServiceProvider
 {
-    const ROOT_PATH = __DIR__ . '/../../';
+    public const ROOT_PATH = __DIR__ . '/../../';
 
     /**
      * Bootstrap any application services.
-     *
-     * @return void
      */
     public function boot(): void
     {
@@ -26,8 +24,6 @@ class RetractProvider extends ServiceProvider
 
     /**
      * Register any application services.
-     *
-     * @return void
      */
     public function register(): void
     {

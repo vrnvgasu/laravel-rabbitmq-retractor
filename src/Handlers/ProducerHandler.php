@@ -19,7 +19,7 @@ class ProducerHandler implements Retractable
     use Retractor;
     use Logger;
 
-    protected $retractorAttempt;
+    protected int $retractorAttempt;
     protected $retractorDelay;
 
     public function __construct()
@@ -30,7 +30,6 @@ class ProducerHandler implements Retractable
 
     /**
      * @param null $DTO
-     * @return bool
      * @throws Exception
      */
     public function tryToProvide($DTO = null): bool
@@ -55,7 +54,6 @@ class ProducerHandler implements Retractable
     }
 
     /**
-     * @param ProducerHandlerDTO $DTO
      * @throws Exception
      */
     public function send(ProducerHandlerDTO $DTO): void
